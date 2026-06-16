@@ -62,7 +62,7 @@ git clone https://github.com/Mangzy/portofolio.git
 - Phone: +62 812-1519-0345  
 - Location: Rembang, Indonesia  
 - LinkedIn: [linkedin.com/in/hanammaulana](https://www.linkedin.com/in/hanammaulana/)  
-- GitHub: [github.com/Mangzyy](https://github.com/Mangzyy)  
+- GitHub: [github.com/Mangzy](https://github.com/Mangzy)  
 - Instagram: [@hanam_mln](https://www.instagram.com/hanam_mln/)  
 - WhatsApp: [+62 812-1519-0345](https://wa.me/+6281215190345)
 
