@@ -88,7 +88,7 @@ cards.forEach(card => {
 });
 
 const typingElement = document.querySelector('.info-home h3'); 
-const words = ["Frontend Developer", "UI/UX Designer", "Web Enthusiast", "React Developer"];
+const words = ["Mobile Developer", "Web Developer", "Web3 Developer", "Roblox Developer", "Business Developer", "Founder @ Rise Academy"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainIcon = document.querySelector(".main-icon");
   const subIcons = document.querySelectorAll(".sub-icons i");
   const designerText = document.getElementById("designer-text");
-  const mainPage = document.getElementById("main-page");
   const loadingScreen = document.getElementById("loading-screen");
 
   function showElement(element, delay=0){
@@ -142,6 +141,16 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     loadingScreen.style.opacity = '0';
     setTimeout(() => loadingScreen.style.display='none', 500);
-    mainPage.classList.add("visible");
+    
+    // FIX: Tampilkan elemen yang sudah di viewport setelah loading selesai
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 150) {
+        el.classList.add('active-reveal');
+      }
+    });
+    
+    // FIX: Scroll ke atas setelah loading selesai
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, 4000);
 });
